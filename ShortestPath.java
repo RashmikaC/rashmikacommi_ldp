@@ -4,24 +4,29 @@ import java.util.*;
 class ShortestPath {
 	static class AdjListNode {
 		int vertex, weight;
-		AdjListNode(int v, int w)
-		{
+
+		AdjListNode(int v, int w) {
 			vertex = v;
 			weight = w;
 		}
-		int getVertex() { 
-            return vertex; 
-        }
-		int getWeight() { 
-            return weight; 
-        }
+
+		int getVertex() {
+			return vertex;
+		}
+
+		int getWeight() {
+			return weight;
+		}
 	}
 
-	public static int dijkstra( int V, ArrayList<ArrayList<AdjListNode>> graph, int src,int destination)
-	{
+	public static void dijkstra(int V, ArrayList<ArrayList<AdjListNode>> graph, int src, int destination) {
 		int[] distance = new int[V];
+		int[] parent=new int[V];
 		for (int i = 0; i < V; i++)
+		{	
 			distance[i] = Integer.MAX_VALUE;
+			parent[i]=i;
+		}
 		distance[src] = 0;
 
 		PriorityQueue<AdjListNode> pq = new PriorityQueue<>((v1, v2) -> v1.getWeight() - v2.getWeight());
@@ -30,25 +35,40 @@ class ShortestPath {
 		while (pq.size() > 0) {
 			AdjListNode current = pq.poll();
 
-			for (AdjListNode n :graph.get(current.getVertex())) {
-				if (distance[current.getVertex()]+ n.getWeight()< distance[n.getVertex()]) {
-					distance[n.getVertex()]= n.getWeight()+ distance[current.getVertex()];
-					pq.add(new AdjListNode(n.getVertex(),distance[n.getVertex()]));
+			for (AdjListNode n : graph.get(current.getVertex())) {
+				if (distance[current.getVertex()] + n.getWeight() < distance[n.getVertex()]) {
+					distance[n.getVertex()] = n.getWeight() + distance[current.getVertex()];
+					pq.add(new AdjListNode(n.getVertex(), distance[n.getVertex()]));
+					parent[n.getVertex()]=current.getVertex();
 				}
 			}
 		}
-		return distance[destination];
+		List<Integer> path = new ArrayList<>();
+		int node=destination;
+		while(node!=src)
+		{
+			path.add(node);
+			node=parent[node];
+		}
+		path.add(src);
+		Collections.reverse(path);
+		System.out.println("Least travelling distance from source vertex-" + src + " to destination vertex-"
+				+ destination + " is " +distance[destination]);
+		System.out.println("The path is :");
+		for(int i=0;i<path.size();i++)
+		{
+			System.out.print(path.get(i)+" ");
+		}
 	}
 
-	public static void main(String[] args)
-	{
-        Scanner in =new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
 		int V = 10;
-		ArrayList<ArrayList<AdjListNode> > graph= new ArrayList<>();
+		ArrayList<ArrayList<AdjListNode>> graph = new ArrayList<>();
 		for (int i = 0; i < V; i++) {
 			graph.add(new ArrayList<>());
 		}
-	    graph.get(0).add(new AdjListNode(1, 4));
+		graph.get(0).add(new AdjListNode(1, 4));
 		graph.get(0).add(new AdjListNode(7, 8));
 		graph.get(1).add(new AdjListNode(2, 8));
 		graph.get(1).add(new AdjListNode(7, 11));
@@ -62,10 +82,12 @@ class ShortestPath {
 		graph.get(3).add(new AdjListNode(5, 14));
 		graph.get(4).add(new AdjListNode(3, 9));
 		graph.get(4).add(new AdjListNode(5, 10));
+		graph.get(4).add(new AdjListNode(9, 2));
 		graph.get(5).add(new AdjListNode(4, 10));
 		graph.get(5).add(new AdjListNode(6, 2));
-            graph.get(5).add(new AdjListNode(2, 4));
-            graph.get(5).add(new AdjListNode(3, 14));
+		graph.get(5).add(new AdjListNode(2, 4));
+		graph.get(5).add(new AdjListNode(3, 14));
+		graph.get(5).add(new AdjListNode(9, 1));
 		graph.get(6).add(new AdjListNode(5, 2));
 		graph.get(6).add(new AdjListNode(7, 1));
 		graph.get(6).add(new AdjListNode(8, 6));
@@ -76,16 +98,15 @@ class ShortestPath {
 		graph.get(8).add(new AdjListNode(2, 2));
 		graph.get(8).add(new AdjListNode(6, 6));
 		graph.get(8).add(new AdjListNode(7, 1));
-            graph.get(9).add(new AdjListNode(4, 2));
-            graph.get(9).add(new AdjListNode(5, 1));
-          
-            System.out.println("Enter the source vertex");
+		graph.get(9).add(new AdjListNode(4, 2));
+		graph.get(9).add(new AdjListNode(5, 1));
+
+		System.out.println("Enter the source vertex");
 		int source = in.nextInt();
-        
-            System.out.println("Enter the destination vertex");
+
+		System.out.println("Enter the destination vertex");
 		int destination = in.nextInt();
 
-		int shortestDist = dijkstra(V, graph, source, destination);
-		System.out.println("Least travelling distance from source vertex-"+ source+" to destination vertex-"+destination+" is "+shortestDist);
+		dijkstra(V, graph, source, destination);
 	}
 }
