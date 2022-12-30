@@ -33,7 +33,7 @@ body {
   color: black;
 }
 
-#nav{
+.navbar a.active{
   background-color: plum;
   color: black;
 }
