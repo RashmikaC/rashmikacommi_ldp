@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#restaurant {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#table {
+  flex: 25%;
+  border-right: 2px solid black;
+  background-color: indianred;
+}
+
+#menu {
+  flex: 75%;
+  border-left: 2px solid black;
+  overflow-y: scroll;
+  background-color: cadetblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input {
+  height: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: none;
+  box-shadow: 1px 3px 5px gray;
+  border-radius: 2px;
+  font-family: Arial, sans-serif;
+  background-color: darkgray;
+}
+
+#menu-search {
+  width: 70%;
+}
+
+#tables {
+  height: 100%;
+  list-style-type: none;
+  padding: 0 5%;
+}
+
+#tables li {
+  width: 90%;
+  height: 12%;
+  margin-bottom: 3%;
+  box-shadow: 1px 3px 5px black;
+  cursor: pointer;
+}
+
+#tables li h2 {
+  margin: 0;
+  padding: 4.5%;
+}
+
+#tables li p {
+  margin: 0;
+  padding: 3%;
+  padding-left: 4.5%;
+}
+
+#menu-items {
+  height: 100%;
+  list-style-type: none;
+  padding: 0 2%;
+}
+
+#menu-items li {
+  width: 90%;
+  height: 12%;
+  margin-bottom: 1%;
+  box-shadow: 1px 3px 5px black;
+  cursor: move;
+}
+
+#menu-items li h2 {
+  margin: 0;
+  padding: 1%;
+  padding-bottom: 0;
+}
+
+#menu-items li p {
+  margin: 0;
+  padding: 1%;
+}
+
+#menu-items li #category {
+  padding: 0px;
+  padding-left: 1%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 23%;
+  top: 20%;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background-color: darkgrey;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: rgb(204, 12, 12);
+  cursor: pointer;
+}
+
+#modal-header {
+  color: white;
+  width: 100%;
+  height: 15%;
+  background-color: green;
+  position: sticky;
+  top: 0;
+}
+
+#modal-header h3 {
+  margin: 1rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#rows tr {
+  width: 100%;
+}
+
+#rows th,
+#rows td {
+  width: 20%;
+  text-align: center;
+}
+
+#rows td input {
+  text-align: center;
+}
+
+#delete {
+  margin: 0 0.5rem;
+}
+
+#total {
+  text-align: center;
+  position: absolute;
+  right: 50%;
+}
+
+#bill {
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  right: 2rem;
+}
