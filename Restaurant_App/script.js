@@ -12,7 +12,7 @@ function populate() {
 
 //Creating a table
 function createTable(id, cost, items) {
-  let table = `<li onclick="openModal('table${id}')" ondrop="drop(event,'table${id}')" ondragover="allowDrop(event)">
+  let table = `<li id="table${id}" onclick="style.backgroundColor='white',openModal('table${id}')" ondrop="drop(event,'table${id}')" ondragover="allowDrop(event)">
         <h2>Table-${id}</h2>
         <p>Rs. ${cost} | Total items: ${items}</p>
         </li>`;
@@ -109,14 +109,22 @@ let modal = document.getElementById("myModal");
 //Modal close
 function closeModal() {
   modal.style.display = "none";
+  overlay.classList.remove('active');
+}
+
+function changeColor(tableNo)
+{
+  let tableId=tableNo.id;
+  document.getElementById(tableId).style.backgroundColor="indianred";
 }
 
 // Adding content to Modal
 function openModal(tableNo) {
   modal.style.display = "block";
+  overlay.classList.add('active');
   document.getElementById("modal-header").innerHTML = `
 	<h3>${tableNo.toUpperCase()} | Order Details
-	<span class="close" onclick="closeModal()">&times;</span></h3>
+	<span class="close" onclick="closeModal(),changeColor(${tableNo})">&times;</span></h3>
 	`;
 
   let rows = document.getElementById("rows");
