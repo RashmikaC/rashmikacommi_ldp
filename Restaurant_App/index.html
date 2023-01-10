@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Restaurant App" />
+	<meta name="author" content="Rashmika" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Restaurant App</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="populate()">
+	<div id="restaurant">
+		<div id="table">
+			<h1>Tables</h1>
+			<input type="text" class="input" placeholder="Search table" id="table-search" oninput="searchTable()" />
+			<ul id="tables"></ul>
+		</div>
+		<div id="menu">
+			<h1>Menu</h1>
+			<input type="text" class="input" placeholder="Search menu... by course, by food" id="menu-search"
+				oninput="searchMenu()" />
+			<ul id="menu-items"></ul>
+		</div>
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div id="modal-header">
+				</div>
+				<div id="modal-body">
+					<table id="rows">
+						<tr>
+							<th>Select the table</th>
+						</tr>
+					</table>
+					<p id="total"></p>
+				</div>
+				<div id="modal-footer">
+				</div>
+			</div>
+		</div>
+		<div id="overlay"></div>
+	</div>
+	<script src="tables.js"></script>
+	<script src="menu.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
