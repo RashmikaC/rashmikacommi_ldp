@@ -30,8 +30,7 @@ function getData(uId) {
 
 async function displayData() {
   console.log("start");
-  var email = await getData("skc");
-  console.log("Email id of the user id is: " + email);
+  await getData("skc").then((val)=>console.log("Email id of the user id is: " + val));
   console.log("end");
 }
 displayData();
