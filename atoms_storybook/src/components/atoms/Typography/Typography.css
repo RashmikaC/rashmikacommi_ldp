@@ -1,0 +1,34 @@
+.typography {
+  color: black;
+  font-family: sans-serif;
+}
+
+.loginHeader {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.mainHeader {
+  font-size: x-large;
+}
+
+.subheader {
+  font-weight: bold;
+  font-size: large;
+}
+
+.text {
+  font-size: x-small;
+  color: grey;
+}
+
+.boldText {
+  font-size: small;
+  font-weight: 600;
+}
+
+.blueText {
+  font-size: x-small;
+  font-weight: 600;
+  color: rgb(17, 71, 217);
+}

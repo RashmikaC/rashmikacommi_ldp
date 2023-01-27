@@ -1,0 +1,28 @@
+.input {
+    display: block;
+    width: 400px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid;
+    border-color: rgb(221, 219, 219);
+    background-color: #fff;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  
+  .email {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .password {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  .search{
+    padding-left: 0.5rem;
+    width: 170px;
+    height: 1.5rem;
+  }
