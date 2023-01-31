@@ -1,0 +1,22 @@
+div{
+     display:flex;
+    
+}  
+ .crypto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 12px;
+  width: 159px;
+  height: 156px;
+}
+.typo {
+  flex-direction: column;
+  align-items: center;
+}
+#select{
+    position: absolute;
+    left:165px;
+    top:100px;
+}
