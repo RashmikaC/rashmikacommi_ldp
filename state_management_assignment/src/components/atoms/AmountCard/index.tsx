@@ -1,26 +1,12 @@
 import React from "react";
 import { Typography, Button } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "../../../themes/AmountCardTheme";
 import "./index.css";
 
 interface Props {
   amount: number;
 }
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#0052FF',
-    },
-  },
-  typography: {
-    button: {
-      textTransform: "none",
-      fontSize: "14px",
-      letterSpacing: "0.01em",
-    },
-  },
-});
 
 export const AmountCard = (props: Props) => {
   return (
