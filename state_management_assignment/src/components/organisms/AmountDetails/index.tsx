@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import { AmountCard } from '../../atoms/AmountCard'
-import { BTCCard } from '../../atoms/BTCCard'
+import { AmountCard } from '../../molecules/AmountCard'
+import { BTCCard } from '../../molecules/BTCCard'
 import { BTSlider } from '../../atoms/BTSlider'
 import './index.css'
 
