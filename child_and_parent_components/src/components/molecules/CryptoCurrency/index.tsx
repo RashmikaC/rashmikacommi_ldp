@@ -2,8 +2,10 @@ import React from "react";
 import { Icon } from "../../atoms/Icon";
 import { MyTypography } from "../../atoms/Typography";
 import "./index.css";
-import {createTheme} from '@mui/material/styles';
 import { ThemeProvider } from "@mui/system";
+
+import { titleTheme } from "../../../themes/TitleTheme";
+import { amountTheme } from "../../../themes/AmountTheme";
 
 interface Props {
   src: string;
@@ -11,26 +13,6 @@ interface Props {
   content1: string;
   content2: string;
 }
-
-const titleTheme= createTheme({
-  typography:{
-    subtitle1:{
-      fontFamily:'sans-serif',
-      fontSize:"1rem",
-      fontWeight:700
-    }
-  },
-});
-
-const amountTheme= createTheme({
-  typography:{
-    subtitle1:{
-      fontFamily:'sans-serif',
-      fontSize:"1rem",
-       color:'#7D7D89'
-    }
-  },
-});
 
 export const CryptoCurrency = ({src,content1,content2,...props }: Props) => {
   return (

@@ -14,24 +14,87 @@ import tick from "../../../assets/Tick.svg";
 import scroll from "../../../assets/Scroll.svg";
 
 export const ChooseCrypto = () => {
+  const data1 = [
+    {
+      src: ethereum,
+      content1: "Ethereum",
+      content2: "$240,048.03",
+    },
+    {
+      src: binance,
+      content1: "Binance",
+      content2: "$30,054.88",
+    },
+    {
+      src: tether,
+      content1: "Tether",
+      content2: "$74.21",
+    },
+  ];
+
+  const data2 = [
+    {
+      src: cardano,
+      content1: "Cardano",
+      content2: "$138.22",
+    },
+    {
+      src: xrp,
+      content1: "XRP",
+      content2: "$76.73",
+    },
+    {
+      src: dogecoin,
+      content1: "Dogecoin",
+      content2: "$21.37",
+    },
+    {
+      src: polkadot,
+      content1: "Polkadot",
+      content2: "$1,642.39",
+    },
+  ];
+
+  const dataItems1 = data1.map((element) => {
+    return (
+      <CryptoCurrency
+        src={element.src}
+        content1={element.content1}
+        content2={element.content2}
+        key={element.content1}
+      />
+    );
+  });
+
+  const dataItems2 = data2.map((element) => {
+    return (
+      <CryptoCurrency
+        src={element.src}
+        content1={element.content1}
+        content2={element.content2}
+        key={element.content1}
+      />
+    );
+  });
+
   return (
     <Stack className="block">
       <h3>Choose crypto</h3>
       <br></br>
       <div className="row">
         <div id="active">
-        <CryptoCurrency src={bitcoin} content1="Bitcoin" content2="$3,406,069.54" select={tick} />
+          <CryptoCurrency
+            src={bitcoin}
+            content1="Bitcoin"
+            content2="$3,406,069.54"
+            select={tick}
+          />
         </div>
-        <CryptoCurrency src={ethereum} content1="Ethereum" content2="$240,048.03" />
-        <CryptoCurrency src={binance} content1="Binance" content2="$30,054.88" />
-        <CryptoCurrency src={tether} content1="Tether" content2="$74.21" />
+        {dataItems1}
         <img id="scroll" src={scroll} alt="" />
       </div>
       <div className="row">
-        <CryptoCurrency src={cardano} content1="Cardano" content2="$138.22" />
-        <CryptoCurrency src={xrp} content1="XRP" content2="$76.73" />
-        <CryptoCurrency src={dogecoin} content1="Dogecoin" content2="$21.37" />
-        <CryptoCurrency src={polkadot} content1="Polkadot" content2="$1,642.39" />
+        {dataItems2}
       </div>
     </Stack>
   );
