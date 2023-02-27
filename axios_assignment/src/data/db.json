@@ -1,0 +1,41 @@
+{
+  "cryptoCurrency": [
+    {
+      "id": 1,
+      "iconURL": "BitcoinIcon",
+      "cryptoName": "Bitcoin",
+      "type": "BTC",
+      "price": "$3,406,069.54",
+      "change": "+1.06%",
+      "marketCap": "$60.1T"
+    },
+    {
+      "id": 2,
+      "iconURL": "EthereumIcon",
+      "cryptoName": "Ethereum",
+      "type": "ETH",
+      "price": "$1,297.93",
+      "change": "-5.49%",
+      "marketCap": "$25.4T"
+    },
+    {
+      "id": 3,
+      "iconURL": "Ethereum2Icon",
+      "cryptoName": "Ethereum 2",
+      "type": "ETH2",
+      "price": "$216,678.10",
+      "change": "-5.49%",
+      "marketCap": "$25.4T"
+    },
+
+    {
+      "id": 4,
+      "iconURL": "TetherIcon",
+      "cryptoName": "Tether",
+      "type": "USDT",
+      "price": "$74.31",
+      "change": "+0.11%",
+      "marketCap": "$4.6T"
+    }
+  ]
+}
