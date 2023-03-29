@@ -1,0 +1,10 @@
+
+T
+java:S1172"2Remove this unused method parameter "userDetails".(€Þ§¸üÿÿÿÿ8™Âæóð0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÿÎçÌùÿÿÿÿ8™Âæóð0
+W
+java:S1172	":Remove these unused method parameters "email", "password".(£Ñ©ï8šÂæóð0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¢º—›ýÿÿÿÿ8›Âæóð0
+I
+java:S1172",Remove this unused method parameter "email".(øƒ¨Ô8›Âæóð0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Î¼¡­ýÿÿÿÿ8œÂæóð0
