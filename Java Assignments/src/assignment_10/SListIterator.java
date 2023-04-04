@@ -1,52 +1,50 @@
 package assignment_10;
-
 public class SListIterator<T> {
-    Link<T> head;
-    Link<T> current;
-    SListIterator(Link<T> head) {
-        this.current= head;
-        this.head=head;
-    }
-    public void insert(T data) {
-//        System.out.println("insert start head "+head.data+" curr"+current.data);
+    private SList.Node<T> curr;
+    private SList.Node<T> head;
 
-        if (head == null) {
-            head = new Link<>(data);
-            current = head;
-        } else {
-            current.next = new Link<>(data);
-            current = current.next;
-        }
-//        System.out.println("insert end head "+head.data+" curr"+current.data);
-    }
-    public void remove() {
-//        System.out.println("remove start head "+head.data+" curr"+current.data);
-        if(head==null)
-        {
-            System.out.println("The list is empty cannot remove!");
-            return;
-        }
-        head = head.next;
-//        System.out.println("remove end head  "+head.data+" curr"+current.data);
+    SListIterator(SList.Node<T> Node) {
+        curr = Node;
+        head = Node;
     }
 
     public boolean hasNext() {
-        return current.next != null;
+
+        return curr != null && curr.next != null;
     }
-    public T next() {
-        current = current.next;
-        return current.data;
-    }
-    public String display() {
-        if(head==null)
-            System.out.println("The list is empty!");
-        StringBuilder sb = new StringBuilder();
-        Link<T> temp=new Link<>(null);
-        temp.next=head;
-        current =temp;
-        while(hasNext()) {
-            sb.append(next() + " ");
+
+    public SList.Node<T> next() {
+        if (!hasNext()) {
+            return null;
         }
-        return sb.toString();
+        curr = curr.next;
+        return curr;
+    }
+
+    public void insert(T data) {
+        if (curr == null) {
+            curr = new SList.Node<T>(data, null);
+            head = curr;
+        } else {
+            curr.next = new SList.Node<T>(data, curr.next);
+            curr = curr.next;
+        }
+    }
+
+    public void remove() {
+        if (curr == null) {
+            return;
+        }
+        if (curr == head) {
+            curr = null;
+            head = new SList.Node<T>(null);
+        } else {
+            SList.Node<T> prev = head;
+            while (prev.next != curr) {
+                prev = prev.next;
+            }
+            prev.next = curr.next;
+            curr = prev;
+        }
     }
 }

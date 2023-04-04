@@ -2,25 +2,25 @@ package assignment_10;
 
 public class Main {
     public static void main(String[] args) {
-        SList<Integer> list=new SList<>();
-        SListIterator<Integer> iterator=new SListIterator<>(null);
+        SList<Integer> list = new SList<Integer>();
+        SListIterator<Integer> iterator = list.iterator();
+
         iterator.insert(10);
         iterator.insert(20);
         iterator.insert(30);
-        System.out.println(iterator.display());
+
+        System.out.println(list);
+
         iterator.remove();
-        System.out.println(iterator.display());
-        iterator.insert(40);
-        System.out.println(iterator.display());
+
+        System.out.println(list);
         iterator.remove();
-        System.out.println(iterator.display());
+
+        System.out.println(list);
         iterator.remove();
-        System.out.println(iterator.display());
-        iterator.remove();
-        System.out.println(iterator.display());
-        iterator.remove();
+
+        iterator.insert(50);
+        iterator.insert(60);
+        System.out.println(list);
     }
 }
-
-//Time Complexity: O(n)
-//Space Complexity: O(n), where n - number of elements in the list

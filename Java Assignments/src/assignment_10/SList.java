@@ -1,17 +1,32 @@
 package assignment_10;
 
 public class SList<T> {
-    Link<T> head=new Link<>(null);
+    private Node<T> head = new Node<T>(null);
+
     public SListIterator<T> iterator() {
         return new SListIterator<T>(head);
     }
+    public static class Node<T> {
+        T data;
+        Node<T> next;
 
-//    public String toString() {
-//        SListIterator<T> iterator = iterator();
-//        StringBuilder sb = new StringBuilder();
-//        while(iterator.hasNext()) {
-//            sb.append(iterator.next() + " ");
-//        }
-//        return sb.toString();
-//    }
+        Node(T data, Node<T> next) {
+            this.data = data;
+            this.next = next;
+        }
+
+        Node(T data) {
+            this(data, null);
+        }
+
+    }
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for(SListIterator<T> it = iterator(); it.hasNext();) {
+            if(it.hasNext()) {
+                sb.append(it.next().data+" ");
+            }
+        }
+        return sb.toString();
+    }
 }
