@@ -57,3 +57,6 @@ public class Assignment3 {
         return median;
     }
 }
+
+//Time complexity:  O(n log n)
+//Space complexity: O(n), where n is the number of ping times
