@@ -1,0 +1,29 @@
+#header {
+  width: 214px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #373c38;
+}
+
+#company {
+  width: 19px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff725e;
+}
+
+#location {
+  width: 174px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #656e66;
+}

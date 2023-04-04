@@ -1,0 +1,31 @@
+@font-face{
+  font-family:Graphik;
+  src: url(../../../font/GraphikRegular.ttf);
+}
+
+div{
+  font-family: Graphik,sans-serif;
+}
+
+.details {
+  box-sizing: border-box;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+
+  width: 711px;
+  height: 318px;
+
+  border: 1px solid #e8e8f7;
+  border-radius: 4px;
+}
+h4 {
+  margin: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  padding-left: 10px;
+}

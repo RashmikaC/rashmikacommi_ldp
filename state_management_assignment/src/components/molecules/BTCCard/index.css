@@ -1,0 +1,31 @@
+.value {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  gap: 108px;
+
+  width: 663px;
+  height: 74px;
+
+  position: relative;
+  left: 10px;
+  
+
+  border: 1px solid #e8e8f7;
+  border-radius: 4px;
+}
+#BTC {
+  width: 32px;
+  height: 22px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  letter-spacing: 0.01em;
+
+  color: #7d7d89;
+}
