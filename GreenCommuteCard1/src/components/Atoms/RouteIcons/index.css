@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+#font{
+  font-family: 'Montserrat', sans-serif;
+}
+.icons {
+  width: 150px;
+  height: 18px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#time {
+  position: relative;
+  bottom: 25px;
+  left: 175px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #373c38;
+}
+
+#routes {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}

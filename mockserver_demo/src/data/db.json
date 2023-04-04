@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Ram",
+      "branch": "IT"
+    },
+    {
+      "id": 2,
+      "name": "Raju",
+      "branch": "CSE"
+    },
+    {
+      "id": 3,
+      "name": "Ravi",
+      "branch": "EEE"
+    },
+    {
+      "id": 4,
+      "name": "Rama",
+      "branch": "MECH"
+    },
+    {
+      "id": 5,
+      "name": "Sita",
+      "branch": "AI"
+    },
+    {
+      "id": 6,
+      "name": "Ramesh",
+      "branch": "ECE"
+    },
+    {
+      "id": 7,
+      "name": "Mahesh",
+      "branch": "ECE"
+    },
+    {
+      "name": "Suresh",
+      "branch": "ECE",
+      "id": 8
+    }
+  ]
+}
