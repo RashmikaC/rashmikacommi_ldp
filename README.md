@@ -1,1 +1,1 @@
-This is DBMS main branch
+This is DBMS branch
