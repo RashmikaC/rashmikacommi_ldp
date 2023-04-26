@@ -1,0 +1,13 @@
+
+f
+java:S1874"DRemove this use of "WebSecurityConfigurerAdapter"; it is deprecated.(‚¥Îˆøÿÿÿÿ8Šõû™û0
+_
+java:S1874"BRemove this use of "withDefaultPasswordEncoder"; it is deprecated.(‘„ß8õû™û0
+]	java:S125&"<This block of commented-out lines of code should be removed.(Èˆ•Ÿùÿÿÿÿ8—õû™û0
+e
+java:S1128"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Ş8—õû™û0
+s
+java:S1128
+"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥8—õû™û0
+ƒ
+java:S1128"aRemove this unused import 'org.springframework.security.provisioning.InMemoryUserDetailsManager'.(îŒúùÿÿÿÿ8—õû™û0

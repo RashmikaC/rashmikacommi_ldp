@@ -1,0 +1,19 @@
+
+P
+ src/main/java/jdbc/TestJdbc.java,9/8/988b9044f9ff2da93b6720a5fbbdbee6578a1505
+Y
+)src/main/java/entity_demo/Instructor.java,2/1/21b8df4df36fd4703653c1717e5243c606a501ef
+U
+%src/main/java/entity_demo/Course.java,2/e/2e1c9be757183cf6a349e36091395afbb69f178f
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+T
+$src/main/resources/hibernate.cfg.xml,3/1/3176feae82bf4ff4f68f72c9d6d3b850a3110c22
+_
+/src/main/java/entity_demo/InstructorDetail.java,0/3/03587c0ff0dbc8d424ed66e6e09845053165cccb
+U
+%src/main/java/entity_demo/Review.java,5/8/585bf64d5cb43dfb0d1c9fb61b5847031a959455
+m
+=src/main/java/hibernate_demo/CreateCoursesAndReviewsDemo.java,e/4/e46135bd9182d69f084de84d0b3b0971c8f84a66
+i
+9src/main/java/hibernate_demo/GetCourseAndReviewsDemo.java,a/f/af4420e8dcccfcea59e845f4487d089eca255409

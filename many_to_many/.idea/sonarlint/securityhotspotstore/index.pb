@@ -1,0 +1,32 @@
+
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+_
+/src/main/java/entity_demo/InstructorDetail.java,0/3/03587c0ff0dbc8d424ed66e6e09845053165cccb
+U
+%src/main/java/entity_demo/Review.java,5/8/585bf64d5cb43dfb0d1c9fb61b5847031a959455
+T
+$src/main/resources/hibernate.cfg.xml,3/1/3176feae82bf4ff4f68f72c9d6d3b850a3110c22
+Y
+)src/main/java/entity_demo/Instructor.java,2/1/21b8df4df36fd4703653c1717e5243c606a501ef
+n
+>src/main/java/hibernate_demo/CreateCoursesAndStudentsDemo.java,6/1/61259d8a1459f37d78554c016ee5ef10ea6bdcd8
+g
+7src/main/java/hibernate_demo/DeleteMaryStudentDemo.java,e/9/e92852dc1728f7671c834a5372459b9d2294019c
+h
+8src/main/java/hibernate_demo/DeletePacmanCourseDemo.java,b/7/b711db119683bf82212afadb85829cfaa2eaaa6a
+g
+7src/main/java/hibernate_demo/GetCoursesForMaryDemo.java,d/a/daff241d9b95be82beda983c34522849809b33db
+U
+%src/main/java/entity_demo/Course.java,2/e/2e1c9be757183cf6a349e36091395afbb69f178f
+g
+7src/main/java/hibernate_demo/AddCoursesForMaryDemo.java,f/b/fbb0fe9f23f29891336103d806260f71a4ea8112
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+O
+src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+P
+ src/main/java/jdbc/TestJdbc.java,9/8/988b9044f9ff2da93b6720a5fbbdbee6578a1505
+V
+&src/main/java/entity_demo/Student.java,8/3/8379213433eba72d472f4853074429baecb3d586

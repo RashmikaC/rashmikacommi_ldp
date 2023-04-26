@@ -1,0 +1,12 @@
+package spring_demo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class DatabaseFortuneService implements FortuneService{
+    @Override
+    public String getFortune() {
+
+        return "Database:Today is your lucky day!";
+    }
+}
