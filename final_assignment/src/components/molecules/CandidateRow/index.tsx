@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import Typography from "../../atoms/Typography";
+import Typography from "components/atoms/Typography";
 
 interface CandidateRowProps {
   name: string;
