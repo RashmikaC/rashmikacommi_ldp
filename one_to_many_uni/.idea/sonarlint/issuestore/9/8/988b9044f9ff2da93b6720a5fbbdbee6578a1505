@@ -1,0 +1,11 @@
+
+e
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(„Îú°8İÊ…Ëù0
+W
+java:S1854":Remove this useless assignment to local variable "myConn".(„Îú°8àÊ…Ëù0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(×Ù•Æøÿÿÿÿ8âÊ…Ëù0
+S
+java:S6437"6Revoke and change this password, as it is compromised.(„Îú°8âÊ…Ëù0
+H
+java:S1481"+Remove this unused "myConn" local variable.(„Îú°8ãÊ…Ëù0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(·Ï·®øÿÿÿÿ8ãÊ…Ëù0
